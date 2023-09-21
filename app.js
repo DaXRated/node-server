@@ -39,24 +39,14 @@ const taskCompleted = (index) => {
 
 const main = () => {
   while (true) {
-    console.log(chalk.cyanBright("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯"));
+    console.log(chalk.cyanBright("▀▀▀▀▀▀▀▀▀▀▀▀▀"));
     console.log(chalk.cyanBright.bold("MAIN MENU"));
-    console.log(chalk.cyanBright("_________________"));
-    console.log(
-      chalk.greenBright.bold("1. ") + chalk.whiteBright.italic("Add Task")
-    );
-    console.log(
-      chalk.greenBright.bold("2. ") + chalk.whiteBright.italic("Show Tasks")
-    );
-    console.log(
-      chalk.greenBright.bold("3. ") + chalk.whiteBright.italic("Delete Task")
-    );
-    console.log(
-      chalk.greenBright.bold("4. ") + chalk.whiteBright.italic("Complete Task")
-    );
-    console.log(
-      chalk.greenBright.bold("5. ") + chalk.whiteBright.italic("Exit")
-    );
+    console.log(chalk.cyanBright("▄▄▄▄▄▄▄▄▄▄▄▄▄"));
+    console.log(chalk.greenBright.bold("1. ") + chalk.whiteBright.italic("Add Task"));
+    console.log(chalk.greenBright.bold("2. ") + chalk.whiteBright.italic("Show Tasks"));
+    console.log(chalk.greenBright.bold("3. ") + chalk.whiteBright.italic("Delete Task"));
+    console.log(chalk.greenBright.bold("4. ") + chalk.whiteBright.italic("Complete Task"));
+    console.log(chalk.greenBright.bold("5. ") + chalk.whiteBright.italic("Exit"));
 
     const options = readlineSync.questionInt(
       chalk.blueBright("Pick a number for an option: \n")
